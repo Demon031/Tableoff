@@ -21,6 +21,7 @@ public:
 		this->wigth = wigth;
 		this->color = color;
 	}
+
 	Table() {
 		this->brand = "no name";
 		this->model = "no name";
@@ -37,12 +38,14 @@ public:
 	void setBrand(string brand) {
 		this->brand = brand;
 	}
+
 	string getModel() {
 		return model;
 	}
 	void setModel() {
 		this->model = model;
 	}
+
 	double getPrice() {
 		return price;
 	}
@@ -51,16 +54,33 @@ public:
 			this->price = price;
 		}
 	}
+
 	double getCapacity() {
 		return capacity;
 	}
-	void setSpeed(double speed) {
+	void setCapacity(double capacity) {
 		if (capacity > 0) {
 			this->capacity = capacity;
 		}
 	}
 
+	double setLength() {
+		return length;
+	}
+	void setLength(double length) {
+		if (length > 0) {
+			this->length = length;
+		}
+	}
 
+	double setWigth() {
+		return wigth;
+	}
+	void setWigth(double wigth) {
+		if (wigth > 0) {
+			this->wigth = wigth;
+		}
+	}
 
 	string getColor() {
 		return color;
@@ -77,7 +97,9 @@ public:
 		return "Table:\nbrand = " + brand
 			+ ";\nmodel = " + model
 			+ ";\nprice = " + to_string(price)
-			+ ";\nspeed = " + to_string(speed)
+			+ ";\ncapacity = " + to_string(capacity)
+			= ";\nlength = " + to_string(length)
+			+ ";\nwigth = " + to_string(wigth)
 			+ ";\ncolor = " + color;
 	}
 };
