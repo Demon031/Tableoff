@@ -1,11 +1,15 @@
 #include "Table.h"
 
 int main() {
-	Table doom;
+	Table table;
+	Table table1;
 
 
+	table.setModel("Ikea");
+	table1.setColor("White");
 
-	cout << doom.getInfo() << endl;
+
+	cout << table.getInfo() << endl;
 
 	return 0;
 }
