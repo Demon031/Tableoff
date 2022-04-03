@@ -12,94 +12,43 @@ private:
 
 public:
 
-	Table(string brand, string model, double price, int capacity, double length, double wigth, string color) {
-		this->brand = brand;
-		this->model = model;
-		this->price = price;
-		this->capacity = capacity;
-		this->length = length;
-		this->wigth = wigth;
-		this->color = color;
-	}
+	Table(string brand, string model, double price, int capacity, double length, double wigth, string color);
 
-	Table() {
-		this->brand = "no name";
-		this->model = "no name";
-		this->price = 0;
-		this->capacity = 0;
-		this->length = 0;
-		this->wigth = 0;
-		this->color = "white";
-	}
+	Table();
+	
 
-	string getBrand() {
-		return brand;
-	}
-	void setBrand(string brand) {
-		this->brand = brand;
-	}
+	string getBrand();
+	
+	void setBrand(string brand);
+	
 
-	string getModel() {
-		return model;
-	}
-	void setModel() {
-		this->model = model;
-	}
+	string getModel();
+	
 
-	double getPrice() {
-		return price;
-	}
-	void setPrice(double price) {
-		if (price > 0) {
-			this->price = price;
-		}
-	}
+	void setModel(string model);
+	
 
-	double getCapacity() {
-		return capacity;
-	}
-	void setCapacity(double capacity) {
-		if (capacity > 0) {
-			this->capacity = capacity;
-		}
-	}
+	double getPrice();
 
-	double setLength() {
-		return length;
-	}
-	void setLength(double length) {
-		if (length > 0) {
-			this->length = length;
-		}
-	}
+	void setPrice(double price);
 
-	double setWigth() {
-		return wigth;
-	}
-	void setWigth(double wigth) {
-		if (wigth > 0) {
-			this->wigth = wigth;
-		}
-	}
+	double getCapacity();
 
-	string getColor() {
-		return color;
-	}
-	void setColor() {
-		this->color = color;
-	}
+	void setCapacity(double capacity);
 
-	~Table() {
-		cout << "Destructor" << endl;
-	}
+	double setLength();
+	
+	void setLength(double length);
 
-	string getInfo() {
-		return "Table:\nbrand = " + brand
-			+ ";\nmodel = " + model
-			+ ";\nprice = " + to_string(price)
-			+ ";\ncapacity = " + to_string(capacity)
-			= ";\nlength = " + to_string(length)
-			+ ";\nwigth = " + to_string(wigth)
-			+ ";\ncolor = " + color;
-	}
+	double setWigth();
+
+	void setWigth(double wigth);
+
+	string getColor();
+
+	void setColor(string color);
+
+	~Table();
+
+	string getInfo();
 };
