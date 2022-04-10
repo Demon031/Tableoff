@@ -5,8 +5,7 @@
 class Shop {
 private:
 	string name;
-	string location;
-	 Table* list;
+	Table* list;
 	int size;
 
 public:
@@ -15,58 +14,22 @@ public:
 
 	Shop(string name);
 
-	Shop(string name, string location, string table) {
-		this->name = name;
-		this->location = location;
-	
-		this->list = list;
-	}
 
-	Shop() {
-		this->name = "MinskDrev";
-		this->location = "Minsk";
-		this->list = "drev,";
-	}
+	Shop(string name, Table* list, int size);
 
-	string getName() {
-		return name;
-	}
-	void setName(string name) {
-		this->name = name;
-	}
+	~Shop();
 
-	string getLocation() {
-		return location;
-	}
+	string getName();
+	void setName(string name);
 
-	void setLocation(string location) {
-		this->location = location;
-	}
-
-	string getTable() {
-		return table;
-	}
-	void setTable(string table) {
-
-		this->table = table;
-
-	}
-
-	~Shop() {
-		cout << "Destructor" << endl;
-	}
-
-	void add(Table table);
+	int getSize();
 	Table get(int index);
-	int getSize(int size);
-	void sortByNameAsc();
-	Table getMax();
-	Table getMin();
 
-	string getInfo() {
-		return "Shop:\nname = " + name
-			+ ";\nlocation = " + location
-			+ ";\ntable = " + table;
-	}
+	Table get(int index);
+	void set(int index, Table table);
+	void add(Table table);
+
+	string getInfo();
+
 };
 
