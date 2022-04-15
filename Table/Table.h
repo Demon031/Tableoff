@@ -1,22 +1,23 @@
+#pragma once
 #include "Header.h"
 
-
-class Table {
+class  Table {
 private:
+	static int count;
+
 	string brand; // бренд  
 	string model; // модель 
 	double price; // цена  
 	int capacity; // вместимость  
 	double length; // длинна   
-	double wigth; // вес    
+	double weigth; // вес    
 	string color; // цвет  
 
 public:
 
 	Table(string brand, string model, double price, int capacity, double length, double wigth, string color);
-
 	Table();
-
+	~Table();
 
 	string getBrand();
 	void setBrand(string brand);
@@ -34,12 +35,10 @@ public:
 	void setLength(double length);
 
 	double setWigth();
-	void setWigth(double wigth);
+	void setWigth(double weigth);
 
 	string getColor();
 	void setColor(string color);
-
-	~Table();
 
 	string getInfo();
 };

@@ -1,5 +1,4 @@
 #pragma once
-#include "Header.h"
 #include "Shop.h"
 
 class Manager
@@ -9,6 +8,6 @@ private:
 public:
 	Manager(string name);
 
-	double calculateAvg(Shop shop);
+	double calculatePrice(Shop shop);
 	
 };

@@ -1,5 +1,4 @@
 #pragma once
-#include "Header.h"
 #include "Table.h"
 
 class Shop {
@@ -25,7 +24,6 @@ public:
 	int getSize();
 	Table get(int index);
 
-	Table get(int index);
 	void set(int index, Table table);
 	void add(Table table);
 
