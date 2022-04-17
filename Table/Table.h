@@ -19,6 +19,8 @@ public:
 	Table();
 	~Table();
 
+	static int getCount();
+
 	string getBrand();
 	void setBrand(string brand);
 
