@@ -65,7 +65,7 @@ void Table::setCapacity(double capacity) {
 	}
 }
 
-double Table::setLength() {
+double Table::getLength() {
 	return length;
 }
 void Table::setLength(double length) {
@@ -74,7 +74,7 @@ void Table::setLength(double length) {
 	}
 }
 
-double Table::setWigth() {
+double Table::getWigth() {
 	return weigth;
 }
 void Table::setWigth(double wigth) {
@@ -92,10 +92,10 @@ void Table::setColor(string color) {
 
 string Table::getInfo() {
 	return "Table:\nbrand = " + brand
-		+ ";\nmodel = " + model
-		+ ";\nprice = " + to_string(price)
-		+ ";\ncapacity = " + to_string(capacity)
-		= ";\nlength = " + to_string(length)
-		+ ";\nwigth = " + to_string(weigth)
-		+ ";\ncolor = " + color;
+		+ "; model = " + model
+		+ "; price = " + to_string(price)
+		+ "; capacity = " + to_string(capacity)
+		+ "; length = " + to_string(length)
+		+ "; wigth = " + to_string(weigth)
+		+ "; color = " + color;
 }

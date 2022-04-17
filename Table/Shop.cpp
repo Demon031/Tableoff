@@ -74,7 +74,7 @@ string Shop::getInfo() {
 		return "Shop " + name + " is empty.";
 	}
 	else {
-		string msg = "Tables of Shop " + name + ":\n";
+		string msg = "Shop of Tables " + name + ":\n";
 		for (int i = 0; i < size; i++)
 		{
 			msg += list[i].getInfo() + "\n";

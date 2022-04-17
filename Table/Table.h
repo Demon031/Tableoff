@@ -33,10 +33,10 @@ public:
 	double getCapacity();
 	void setCapacity(double capacity);
 
-	double setLength();
+	double getLength();
 	void setLength(double length);
 
-	double setWigth();
+	double getWigth();
 	void setWigth(double weigth);
 
 	string getColor();
